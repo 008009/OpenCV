@@ -6,8 +6,9 @@ import numpy as np
 
 face_cascade = cv2.CascadeClassifier('/Users/carl0809/OpenCV/data/haarcascade_frontalface_default.xml')
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-imageDir = os.path.join(BASE_DIR, "src")
 
+imageDir = os.path.join(BASE_DIR, "ImageSrc")
+print(imageDir)
 #lbph recognizer
 recognizer = cv2.face.LBPHFaceRecognizer_create()
 
